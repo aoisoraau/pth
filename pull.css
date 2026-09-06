@@ -1,0 +1,33 @@
+#pull {
+  width: 100%;
+  margin: 0 0 12px;
+  background: #f1a93b;
+  color: #4b3518;
+  border: 2px solid #c67a22;
+  box-shadow: 0 5px 0 #a96320;
+  font-size: 17px;
+}
+
+#pull.active {
+  background: #ffdf55;
+  border-color: #dc9b19;
+  box-shadow: 0 5px 0 #bd7b12;
+  animation: grab-pulse 1s ease-in-out infinite;
+}
+
+#pull small { float: right; margin-top: 2px; }
+
+.label.grabbed {
+  outline: 4px solid #ffdf31;
+  outline-offset: 4px;
+  filter: drop-shadow(0 0 7px #ffdf65);
+}
+
+@keyframes grab-pulse {
+  50% { transform: translateY(-2px); box-shadow: 0 7px 0 #bd7b12, 0 0 15px #ffd94d; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #pull.active { animation: none; }
+}
+
