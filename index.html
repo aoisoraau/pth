@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>出動！重組句子搬運員！！</title><link rel="stylesheet" href="style.css?v=14"><link rel="stylesheet" href="pull.css?v=14"><link rel="stylesheet" href="learning.css?v=14"><link rel="stylesheet" href="polish.css?v=14"><link rel="stylesheet" href="rounded.css?v=14"><link rel="stylesheet" href="race.css?v=14"><link rel="stylesheet" href="gamepad.css?v=14"></head>
+<body><header><a class="brand" href="index.html">出動！重組句子搬運員！！</a><button id="sound" aria-pressed="true">♫ 音樂及音效開</button></header>
+<main><section class="intro"><div class="question-nav"><button id="previousQuestion" aria-label="上一題">‹</button><span id="progress" aria-label="題目進度"></span><button id="nextQuestion" aria-label="下一題">›</button><select id="levels" class="sr-only" aria-label="選擇題目"></select></div><div class="difficulty"><strong>難度</strong><div id="difficultyButtons"><button data-difficulty="easy" class="active">🟢 幫幫我</button><button data-difficulty="normal">🟡 想一想</button><button data-difficulty="hard">🔴 自己來</button><button data-difficulty="timed">⏱ 計時賽</button></div></div></section>
+<section class="workspace"><div class="game"><div class="board-bar"><span>📦 出動！重組句子搬運員！！</span><div class="hud"><span id="timer" hidden>⏱ 準備</span><span id="score">⭐ 0 分</span><span id="steps">0 步</span></div></div><div id="viewport"><div id="labels"></div><div id="guideStrip" aria-live="polite"></div><div id="scorePop" aria-hidden="true"></div><div id="celebrate" hidden><div class="win-card"><div class="stars">★ ★ ★</div><h2>任務完成！</h2><p id="winResult">你是出色的句子搬運員！</p><strong id="winSentence"></strong><button id="winNext">繼續冒險 →</button><button id="winClose">再讀一次句子</button></div></div><div id="error" hidden>未能啟動 3D 畫面。請使用支援 WebGL 的 Chrome、Edge 或 Safari，並確認 vendor 資料夾完整。</div></div><div class="board-foot"><span id="boardHelp">同色木箱搬到同色位置</span><button id="view">切換鳥瞰</button></div></div>
+<aside><span class="eyebrow">語文小錦囊</span><h2 id="kind"></h2><p id="task"></p><div class="hint"><strong>✦ 思考提示</strong><p id="hint"></p><button id="hintButton">顯示下一個詞組線索</button></div><button id="pull" aria-pressed="false">👐 拉住木箱 <small>G</small></button><div class="actions"><button id="undo">↶ 復原 <small>U</small></button><button id="reset">↻ 重設 <small>R</small></button></div><div class="pad" aria-label="觸控方向鍵"><button data-dir="up" aria-label="向上">↑</button><button data-dir="left" aria-label="向左">←</button><button data-dir="down" aria-label="向下">↓</button><button data-dir="right" aria-label="向右">→</button></div><p class="help">方向鍵 / WASD 移動<br>推錯？行到箱旁按「拉住木箱」，<br>拖到新方向後再按一次放手。<span id="gamepadStatus">🎮 按手掣任意鍵連接</span></p></aside></section>
+<p id="message" class="sr-only" role="status" aria-live="polite"></p></main>
+<script src="vendor/three.min.js"></script><script src="levels.js?v=14"></script><script src="engine.js?v=14"></script><script src="game.js?v=14"></script></body></html>
+
+
+
+
+
+
+
