@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Huninn Round";
+  src: url("https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+html,
+body,
+button,
+select,
+input,
+textarea {
+  font-family: "Huninn Round", "Yuanti TC", "Yuanti SC", ui-rounded, sans-serif;
+}
