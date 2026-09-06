@@ -1,0 +1,18 @@
+#gamepadStatus {
+  display: block;
+  margin-top: 10px;
+  padding: 7px 9px;
+  color: #705f45;
+  background: #eee7d4;
+  border: 1px solid #cfbf98;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+#gamepadStatus.connected {
+  color: #145c4d;
+  background: #d9f4e6;
+  border-color: #75b797;
+}
+
