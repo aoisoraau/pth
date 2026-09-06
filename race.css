@@ -1,0 +1,29 @@
+.hud #timer {
+  background: #245e86;
+  border-color: #75bde4;
+  color: #eaf8ff;
+  font-variant-numeric: tabular-nums;
+}
+
+.hud #timer.urgent {
+  background: #b63e45;
+  border-color: #ff9ca1;
+  animation: timer-pulse .7s ease-in-out infinite alternate;
+}
+
+.hud #timer.overtime {
+  background: #6b5c67;
+  border-color: #aa9aa6;
+  color: #f4edf2;
+  animation: none;
+}
+
+.difficulty-timed .hint,
+.difficulty-timed #hintButton {
+  display: none;
+}
+
+@keyframes timer-pulse {
+  to { transform: scale(1.06); box-shadow: 0 0 12px #ff7e75; }
+}
+
