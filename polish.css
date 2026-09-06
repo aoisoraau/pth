@@ -1,0 +1,26 @@
+#guideStrip:not(:empty) {
+  padding: 6px 13px;
+  color: #244f49;
+  background: rgba(255, 253, 224, 0.94);
+  border: 2px solid #dbbd68;
+  border-radius: 18px;
+  box-shadow: 0 3px 0 rgba(111, 81, 30, 0.28);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.label.goal {
+  transition: opacity 120ms ease;
+}
+
+.label.word-guide {
+  border-width: 4px;
+}
+
+@media (max-width: 700px) {
+  #guideStrip:not(:empty) {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
